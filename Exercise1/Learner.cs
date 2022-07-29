@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    class Class1
+    class Learner
     {
-        public string color = "red";
+        public string FamilyName { get; set; }
+        public string GivenNames { get; set; }
+        public string LearnerRefNumber { get; set; }
+        public int? Accom { get; set; }
+
         public static void Hello()
         {
             Console.WriteLine("Hello from inside class");

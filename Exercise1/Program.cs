@@ -7,9 +7,9 @@ namespace Exercise1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World 2!");
-            Class1 HelloClass = new Class1();
-            Console.WriteLine(HelloClass.color);
-            Class1.Hello();
+            Learner HelloClass = new Learner();
+            HelloClass.FamilyName = "Mark";
+            Console.WriteLine(HelloClass.FamilyName);
         }
     }
 
