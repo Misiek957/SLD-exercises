@@ -8,7 +8,7 @@ namespace Exercise1
         {
             Console.WriteLine("Starting...");
             Learner customLearner = CreateCustomLearner();
-            Console.WriteLine(customLearner);
+            Accom_1.CheckLearnerValidity(customLearner);
         }
 
         private static Learner CreateCustomLearner()
