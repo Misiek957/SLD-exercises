@@ -6,10 +6,19 @@ namespace Exercise1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World 2!");
-            Learner HelloClass = new Learner();
-            HelloClass.FamilyName = "Mark";
-            Console.WriteLine(HelloClass.FamilyName);
+            Console.WriteLine("Starting...");
+            Learner customLearner = CreateCustomLearner();
+            Console.WriteLine(customLearner);
+        }
+
+        private static Learner CreateCustomLearner()
+        {
+            Learner customLearner = new Learner();
+            customLearner.FamilyName = "Sterling";
+            customLearner.GivenNames = "Maria";
+            customLearner.LearnRefNumber = "ref123";
+            customLearner.Accom = 1;
+            return customLearner;
         }
     }
 
