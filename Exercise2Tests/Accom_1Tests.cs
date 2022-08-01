@@ -16,8 +16,10 @@ namespace Exercise2Tests
                 Accom = 1
             };
 
-            // Act & Assert
-            Assert.Equal(1,testLearner.Accom);
+            // Act
+            bool validityStatus = Accom_1.VerifyAccom(testLearner);
+            // Assert
+            Assert.True(validityStatus);
         }
 
         [Fact]
@@ -31,9 +33,10 @@ namespace Exercise2Tests
                 LearnRefNumber = "Ref456",
                 Accom = 0
             };
-
-            // Act & Assert
-            Assert.Equal(0, testLearner.Accom);
+            // Act
+            bool validityStatus = Accom_1.VerifyAccom(testLearner);
+            // Assert
+            Assert.False(validityStatus);
         }
     }
 }

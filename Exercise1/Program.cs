@@ -13,11 +13,14 @@ namespace Exercise1
 
         private static Learner CreateCustomLearner()
         {
-            Learner customLearner = new Learner();
-            customLearner.FamilyName = "Sterling";
-            customLearner.GivenNames = "Maria";
-            customLearner.LearnRefNumber = "ref123";
-            customLearner.Accom = 1;
+            var customLearner = new Learner
+            {
+                FamilyName = "Sterling",
+                GivenNames = "Maria",
+                LearnRefNumber = "ref123",
+                Accom = 1
+            };
+
             return customLearner;
         }
     }
