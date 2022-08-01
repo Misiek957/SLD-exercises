@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise1
 {
-    class Accom_1
+    public class Accom_1
     {
         public static void CheckLearnerValidity (Learner learnerToCheck)
         {
