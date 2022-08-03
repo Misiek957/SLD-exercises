@@ -5,30 +5,28 @@
         public static void CheckLearnerValidity (Learner learnerToCheck)
         {
             bool validityStatus = VerifyAccom(learnerToCheck);
-            DisplayValidityMessage(validityStatus);
+            string displayName = LearnerController.GetDisplayName(learnerToCheck);
+            DisplayValidityMessage(displayName, validityStatus);
         }
 
         public static bool VerifyAccom(Learner learnerToCheck)
         {
-            if (learnerToCheck.Accom == 1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            bool status = (learnerToCheck.Accom == 1) ? true : false;
+            return status;
         }
 
-        public static void DisplayValidityMessage(bool validityStatus)
+        public static void DisplayValidityMessage(string displayName, bool validityStatus)
         {
+
             if (validityStatus)
             {
-                Console.WriteLine("This learner is valid");
+                string message = "Learner " + displayName + " is valid";
+                Console.WriteLine(message);
             }
             else
             {
-                Console.WriteLine("This learner is invalid");
+                string message = "Learner " + displayName + " is invalid";
+                Console.WriteLine(message);
             }
         }
     }
