@@ -1,21 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Exercise1
+﻿namespace Exercise1
 {
-    class Accom_1
+    public class Accom_1
     {
         public static void CheckLearnerValidity (Learner learnerToCheck)
         {
-            if (learnerToCheck.Accom == 1)
+            bool validityStatus = VerifyAccom(learnerToCheck);
+            string displayName = LearnerController.GetDisplayName(learnerToCheck);
+            DisplayValidityMessage(displayName, validityStatus);
+        }
+
+        public static bool VerifyAccom(Learner learnerToCheck)
+        {
+            bool status = (learnerToCheck.Accom == 1) ? true : false;
+            return status;
+        }
+
+        public static void DisplayValidityMessage(string displayName, bool validityStatus)
+        {
+
+            if (validityStatus)
             {
-                Console.WriteLine("This learner is valid");
-            } else
+                string message = "Learner " + displayName + " is valid";
+                Console.WriteLine(message);
+            }
+            else
             {
-                Console.WriteLine("This learner is invalid");
+                string message = "Learner " + displayName + " is invalid";
+                Console.WriteLine(message);
             }
         }
     }

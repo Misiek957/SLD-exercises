@@ -6,19 +6,15 @@ namespace Exercise1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting...");
-            Learner customLearner = CreateCustomLearner();
-            Accom_1.CheckLearnerValidity(customLearner);
-        }
+            Console.WriteLine("Starting...\n");
 
-        private static Learner CreateCustomLearner()
-        {
-            Learner customLearner = new Learner();
-            customLearner.FamilyName = "Sterling";
-            customLearner.GivenNames = "Maria";
-            customLearner.LearnRefNumber = "ref123";
-            customLearner.Accom = 1;
-            return customLearner;
+            // Import Learner json Data
+            var importedLearners = LearnerController.ImportLearnerJson();
+            LearnerController.ValidateListOflearners(importedLearners);
+
+            // Export Learner json Data
+            var exportLearners = LearnerController.CreateListOfCustomLearners();
+            LearnerController.ExportLearnerJson(exportLearners);
         }
     }
 

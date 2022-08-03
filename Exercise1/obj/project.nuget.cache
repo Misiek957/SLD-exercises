@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "85nfCCS9JRHbZtnBabzUPsYAP2nHSrG1nWdqd1VRNcHNuiip8Q6dzIkoxsPq3C3tWIUsAJi7cSO0kLQkD3kfOg==",
+  "dgSpecHash": "Ng6haK2gPd9G7f/YwJokN0p6qyTpizHSk9DnVkV8XsOFBHIGmvTEz0gY+M3kKB0ATR1yWTghIXeQxfn42yX3SA==",
   "success": true,
   "projectFilePath": "C:\\dev\\exercise\\Exercise1\\Exercise1\\Exercise1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Michal.NAHLIK\\.nuget\\packages\\esfa.dc.io.interfaces\\0.1.49-beta0001\\esfa.dc.io.interfaces.0.1.49-beta0001.nupkg.sha512",
+    "C:\\Users\\Michal.NAHLIK\\.nuget\\packages\\esfa.dc.serialization.interfaces\\0.1.49-beta0001\\esfa.dc.serialization.interfaces.0.1.49-beta0001.nupkg.sha512",
+    "C:\\Users\\Michal.NAHLIK\\.nuget\\packages\\esfa.dc.serialization.json\\0.1.49-beta0001\\esfa.dc.serialization.json.0.1.49-beta0001.nupkg.sha512",
+    "C:\\Users\\Michal.NAHLIK\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
