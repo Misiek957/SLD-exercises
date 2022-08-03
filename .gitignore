@@ -3,7 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-.vs/*
+vs/*
+Exercise1/obj/*
 
 # User-specific files
 *.suo
